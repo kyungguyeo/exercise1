@@ -6,7 +6,7 @@ CREATE EXTERNAL TABLE hospitals (PROVIDER_ID varchar(500), HOSPITAL_NAME varchar
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/path/in/hdfs/';
+LOCATION '$HADOOP_HOME/exercise1_data';
 
 --EFFECTIVE CARE
 DROP TABLE effective_care;
@@ -14,7 +14,7 @@ CREATE EXTERNAL TABLE effective_care (PROVIDER_ID varchar(500),HOSPITAL_NAME var
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/path/in/hdfs/';
+LOCATION '$HADOOP_HOME/exercise1_data';
 
 --READMISSIONS
 DROP TABLE readmissions;
@@ -22,7 +22,7 @@ CREATE EXTERNAL TABLE readmissions (PROVIDER_ID varchar(500),HOSPITAL_NAME varch
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/path/in/hdfs/';
+LOCATION '$HADOOP_HOME/exercise1_data';
 
 --SURVEYS
 DROP TABLE surveys_responses;
@@ -30,4 +30,4 @@ CREATE EXTERNAL TABLE surveys_responses (Provider_Number VARCHAR(500), Hospital_
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/path/in/hdfs/';
+LOCATION '$HADOOP_HOME/exercise1_data';
