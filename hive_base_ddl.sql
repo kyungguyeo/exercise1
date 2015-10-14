@@ -30,4 +30,4 @@ CREATE EXTERNAL TABLE surveys_responses (Provider_Number VARCHAR(500), Hospital_
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '$HADOOP_HOME/exercise1_data';
+LOCATION '/usr/lib/hadoop/exercise1_data';
