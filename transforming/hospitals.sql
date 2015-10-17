@@ -1,4 +1,4 @@
 --HOSPITALS
 
-LOAD DATA LOCAL INPATH '/usr/lib/hadoop/exercise1_data/hospitals.csv'
+LOAD DATA LOCAL INPATH '/root/exercise1/hospital_compare/hospitals.csv'
 OVERWRITE INTO TABLE hospitals;
