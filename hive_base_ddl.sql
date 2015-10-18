@@ -1,7 +1,6 @@
 --HOSPITALS
 
 DROP TABLE IF EXISTS hospitals;
-
 CREATE EXTERNAL TABLE hospitals (PROVIDER_ID varchar(500), HOSPITAL_NAME varchar(500), ADDRESS varchar(500), CITY varchar(500), STATE varchar(500), ZIP_CODE varchar(500), COUNTY_NAME varchar(500), PHONE_NUMBER varchar(500), HOSPITAL_TYPE varchar(500), HOSPITAL_OWNERSHIP varchar(500), EMERGENCY_SERVICES varchar(500)) 
 row format delimited
 fields terminated by ','
