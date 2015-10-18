@@ -1,0 +1,1 @@
+This is a very similar query as the best_hospitals query, but the scores are now averaged over state, which is a column found in the hosptals_tr table. The limit is set on an ordered verson of the avg_score column at 10.
