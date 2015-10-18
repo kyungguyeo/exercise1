@@ -6,7 +6,7 @@ CREATE EXTERNAL TABLE hospitals (PROVIDER_ID varchar(500), HOSPITAL_NAME varchar
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data';
+LOCATION '/usr/lib/hadoop/exercise1_data/hospitals';
 
 --EFFECTIVE CARE
 DROP TABLE IF EXISTS effective_care;
@@ -14,7 +14,7 @@ CREATE EXTERNAL TABLE effective_care (PROVIDER_ID varchar(500),HOSPITAL_NAME var
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data';
+LOCATION '/usr/lib/hadoop/exercise1_data/effective_care';
 
 --READMISSIONS
 DROP TABLE IF EXISTS readmissions;
@@ -22,7 +22,7 @@ CREATE EXTERNAL TABLE readmissions (PROVIDER_ID varchar(500),HOSPITAL_NAME varch
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data';
+LOCATION '/usr/lib/hadoop/exercise1_data/readmissions';
 
 --SURVEYS
 DROP TABLE IF EXISTS surveys_responses;
@@ -30,4 +30,4 @@ CREATE EXTERNAL TABLE surveys_responses (Provider_Number VARCHAR(500), Hospital_
 row format delimited
 fields terminated by ','
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data';
+LOCATION '/usr/lib/hadoop/exercise1_data/surveys_responses';
