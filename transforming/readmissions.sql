@@ -1,2 +1,2 @@
 --READMISSIONS
-CREATE TABLE read row format delimited AS SELECT PROVIDER_ID, MEASURE_ID, COMPARED_TO_NATIONAL, DENOMENATOR, SCORE, LOWER_ESTIMATE, HIGHER_ESTIMATE, FOOTNOTE, MEASURE_START_DATE, MEASURE_END_DATE FROM readmissions;
+CREATE TABLE readmissions_tr row format delimited AS SELECT provider_id, measure_id, compared_to_national, denomenator, score, lower_estimate, higher_estimate, footnote, measure_start_date, measure_end_date FROM readmissions;

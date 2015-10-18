@@ -1,1 +1,1 @@
-CREATE TABLE hosp row format delimited AS SELECT * FROM hospitals;
+CREATE TABLE hospitals_tr row format delimited AS SELECT * FROM hospitals;

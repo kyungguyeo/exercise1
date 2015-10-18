@@ -1,2 +1,2 @@
 --EFFECTIVE CARE
-CREATE TABLE eff_care row format delimited AS SELECT PROVIDER_ID, MEASURE_ID, CONDITION, MEASURE_NAME, SCORE, SAMPLE, FOOTNOTE, MEASURE_START_DATE, MEASURE_END_DATE FROM effective_care;
+CREATE TABLE effective_care_tr row format delimited AS SELECT provider_id, measure_id, condition, measure_name, score, sample, footnote, measure_start_date, measure_end_date FROM effective_care;
