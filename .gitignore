@@ -2,3 +2,4 @@
 .DS_Store
 # Other random files that isn't needed
 derby.log
+*.Rhistory
