@@ -1,1 +1,1 @@
-The variance of the hospital procedures can be found using the variance function in hive. By grouping by hospital provider id, we can see which hospitals had the highest variances.
+The variance of the hospital procedures can be found using the variance function in hive. By grouping by hospital provider id, we can see which hospitals had the highest variances. 
