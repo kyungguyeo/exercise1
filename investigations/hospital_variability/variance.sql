@@ -1,16 +1,1 @@
-SELECT
-	h.provider_id
-	,h.hospital_name
-	,variance(e.score) var
-FROM
-	effective_care_tr e
-	JOIN 
-	hospitals_tr h
-	ON (e.provider_id = h.provider_id)
-WHERE
-	e.score <> 'Not Available'
-GROUP BY 
-	h.provider_id, h.hospital_name
-ORDER BY 
-	var desc
-LIMIT 10
+SELECT DISTINCT a.measure_id, a.measure_name, ROUND(a.sd_score, 2) as sd_score, a.range_score FROM (SELECT e.measure_id, e.measure_name, STDDEV_POP(e.score) as sd_score, MAX(e.score) - MIN(e.score) as range_score FROM effective_care_tr e GROUP BY e.measure_id, e.measure_name LIMIT 100) a ORDER BY a.range_score desc;
