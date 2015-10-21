@@ -1,3 +1,5 @@
+Which procedures have the greatest variability between hospitals?
+
 The variance of the hospital procedures can be found by checking the variance of the procedure scores. By grouping by hospital measure id, we can see which procedures had the highest variances. I added range_score, a simple subtraction between the max score and the min score, to show just how much the scores varied for these procedures across hospitals. The maximum score for all procedures is 1180 and the minimum score is 0.
 
 measure_id	sd_score	range_score

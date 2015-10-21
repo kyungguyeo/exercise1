@@ -1,3 +1,5 @@
+What states are models of high-quality care?
+
 The process for determining states with the highest quality care is very similar to the process conducted to determine hospitals with the highest quality care. Like the previous analysis, the mean of the scores is 0 with a standard deviation of 1:
 
 WI	0.64

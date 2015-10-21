@@ -1,3 +1,5 @@
+Are average scores for hospital quality or procedural variability correlated with patient survey responses?
+
 For this question there were two different questions asked, and the first is the correlation between hospital quality scores and survey scores. Both scores are from the best_hospitals analysis. Quality_score takes the average of base_score and consistency_score, and survey_score comes from a standardized average of all survey responses. The correlation between these two are very high, as expected: higher-scoring hospitals are likely to get higher survey results, and lower-scoring hospitals are likely to get lower survey results:
 
 >>SELECT ROUND(CORR(CAST(a.survey_score AS DOUBLE), CAST(a.quality_score AS DOUBLE)),2) as corr FROM (SELECT DISTINCT h.provider_id, h.hospital_name, h.survey_score, (h.base_score + h.consistency_score)/2 quality_score FROM hospital_summary_scores h) a;

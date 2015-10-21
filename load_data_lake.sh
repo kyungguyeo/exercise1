@@ -1,7 +1,3 @@
-cd /root
-git clone https://github.com/UC-Berkeley-I-School/w205-labs-exercises.git
-cd /root/exercise1/hospital_compare/
-
 tail -n +2 "Hospital General Information.csv" > hospitals.csv
 tail -n +2 "Timely and Effective Care - Hospital.csv" > effective_care.csv
 tail -n +2 "Readmissions and Deaths - Hospital.csv" > readmissions.csv
