@@ -1,1 +1,0 @@
-By finding the averages of each hospital's correlation we are able to find the overall correlation score for our aggregate score (weighted average between effective care and readmission) and the survey results for each hospital.
