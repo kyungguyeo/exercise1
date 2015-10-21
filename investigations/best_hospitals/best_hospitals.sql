@@ -1,9 +1,7 @@
-/*
-AGGREGATE MEAN AND SD FOR:
-	SURVEY RESULTS
-	BASE SCORE
-	CONSISTENCY SCORE
-*/
+--AGGREGATE MEAN AND SD FOR:
+	--SURVEY RESULTS
+	--BASE SCORE
+	--CONSISTENCY SCORE
 DROP TABLE IF EXISTS summary_scores;
 CREATE TABLE summary_scores row format delimited AS SELECT a.survey_avg, a.survey_sd, a.base_avg, a.base_sd, a.consistency_avg, a.consistency_sd FROM (SELECT AVG(s.survey1 + s.survey2 + s.survey3 + s.survey4 + s.survey5 + s.survey6 + s.survey7 + s.survey8 + s.survey9 + s.survey10 + s.survey11 + s.survey12 + s.survey13 + s.survey14 + s.survey15 + s.survey16 + s.survey17 + s.survey18 + s.survey19 + s.survey20 + s.survey21 + s.survey22 + s.survey23 + s.survey24) as survey_avg, STDDEV_POP(s.survey1 + s.survey2 + s.survey3 + s.survey4 + s.survey5 + s.survey6 + s.survey7 + s.survey8 + s.survey9 + s.survey10 + s.survey11 + s.survey12 + s.survey13 + s.survey14 + s.survey15 + s.survey16 + s.survey17 + s.survey18 + s.survey19 + s.survey20 + s.survey21 + s.survey22 + s.survey23 + s.survey24) survey_sd, AVG(s.base_score) base_avg, STDDEV_POP(s.base_score) base_sd, AVG(s.consistency_score) consistency_avg, STDDEV_POP(s.consistency_score) consistency_sd FROM surveys_responses_tr s) a; 
 
