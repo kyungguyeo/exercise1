@@ -9,7 +9,7 @@ WITH SERDEPROPERTIES (
    "escapeChar"    = '\\'
 )
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data/hospitals';
+LOCATION '/exercise1_data/hospitals';
 
 --EFFECTIVE CARE
 DROP TABLE IF EXISTS effective_care;
@@ -21,7 +21,7 @@ WITH SERDEPROPERTIES (
    "escapeChar"    = '\\'
 )
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data/effective_care';
+LOCATION '/exercise1_data/effective_care';
 
 --READMISSIONS
 DROP TABLE IF EXISTS readmissions;
@@ -33,7 +33,7 @@ WITH SERDEPROPERTIES (
    "escapeChar"    = '\\'
 )
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data/readmissions';
+LOCATION '/exercise1_data/readmissions';
 
 --SURVEYS
 DROP TABLE IF EXISTS surveys_responses;
@@ -45,4 +45,4 @@ WITH SERDEPROPERTIES (
    "escapeChar"    = '\\'
 )
 stored as textfile
-LOCATION '/usr/lib/hadoop/exercise1_data/surveys_responses';
+LOCATION '/exercise1_data/surveys_responses';
