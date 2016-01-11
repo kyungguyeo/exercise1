@@ -27,4 +27,5 @@ To run the analyses, change directories to investigations, and in the best_hospi
 
 ###ER diagram
 Under loading_and_modeling is a simple er diagram of the data architecture used for this project, displayed below: 
+
 ![ER Diagram](/loading_and_modeling/ex1_er_diagram.png)
